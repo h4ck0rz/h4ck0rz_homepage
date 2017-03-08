@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<title>h4ck0rz</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- google font -->
+<link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet"> 
+<style>
+html,body,h1,h2,h3,h4,h5 {font-family: 'Special Elite', cursive}
+</style>
+<body class="w3-black w3-text-light-green">
+
+<!-- Top container -->
+<div class="w3-container w3-top w3-grey w3-text-black w3-large w3-padding" style="z-index:4">
+  <button class="w3-button w3-hide-large w3-padding-0 w3-hover-none w3-grey w3-text-black w3-left w3-margin-right" onclick="w3_open();"><i class="fa fa-bars"></i> <b> Menu</b></button>
+  <span class="w3-left"><b><i class="fa fa-file-code-o w3-margin-right"></i>/etc/h4ck0rz_v1_email.exe </b></span>
+  <a href="#"><span class="w3-right"><i class="fa fa-window-close fa-fw"></i>  logout</span></a>
+</div>
+
+<!-- Sidenav/menu -->
+<nav class="w3-sidenav w3-collapse w3-animate-left w3-black w3-text-light-green w3-border-right w3-border-color-light-green" style="z-index:3;width:300px;" id="mySidenav"><br>
+  <div class="w3-container w3-row">
+    <div class="w3-col s4">
+      <img src="./w3images/avatar2.png" class="w3-circle w3-margin-right" style="width:46px">
+    </div>
+    <div class="w3-col s8">
+      <span>welcome, <strong>h4ck0r</strong></span><br>
+      <a href="#" class="w3-hover-none w3-hover-text-red w3-show-inline-block"><i class="fa fa-envelope"></i></a>
+      <a href="#" class="w3-hover-none w3-hover-text-green w3-show-inline-block"><i class="fa fa-user"></i></a>
+      <a href="#" class="w3-hover-none w3-hover-text-blue w3-show-inline-block"><i class="fa fa-cog"></i></a>
+    </div>
+  </div>
+ <!-- menu entries-->
+  <div class="w3-container">
+    <h4><b>menu</b></h4>
+  </div>
+  <a href="./index.html" class="w3-padding w3-hover-pale-green"><i class="fa fa-desktop fa-fw"></i>  dashboard</a>
+  <a href="./email.html" class="w3-padding w3-light-green w3-text-black"><i class="fa fa-envelope fa-fw"></i>  email</a>
+  <a href="#" class="w3-padding w3-hover-pale-green"><i class="fa fa-code fa-fw"></i>  lockpick</a>
+  <a href="#" class="w3-padding w3-hover-pale-green"><i class="fa fa-cube fa-fw"></i>  filesystem</a>
+  <a href="#" class="w3-padding w3-hover-pale-green"><i class="fa fa-podcast fa-fw"></i>  news</a>  
+</nav>
+
+
+<!-- Overlay effect when opening sidenav on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px;margin-top:43px;">
+
+  <!-- Header -->
+  <header class="w3-container" style="padding-top:22px">
+    <h1>> make email great again!</h1>
+  </header>
+
+<!-- recent emails -->
+  <div class="w3-container">
+    <h3><i class="fa fa-exclamation-triangle w3-margin-right"></i> recent emails</h3>
+    <ul class="w3-ul w3-card-4 w3-light-grey">
+      <li class="w3-padding-16 w3-hover-pale-green">
+        <span onclick="this.parentElement.style.display='none'" class="w3-closebtn w3-padding w3-margin-right w3-medium"><i class="fa fa-window-close"></i></span>
+        <span class="w3-xlarge">[01.05.2017 00:13] anonymus - welcome to the game, here is the tutorial ;)</span><br>
+      </li>
+      <li class="w3-padding-16 w3-hover-pale-green">
+        <span onclick="this.parentElement.style.display='none'" class="w3-closebtn w3-padding w3-margin-right w3-medium"><i class="fa fa-window-close"></i></span>
+        <span class="w3-xlarge">[01.05.2017 00:13] anonymus - welcome to the game, here is the tutorial ;)</span><br>
+      </li>
+      <li class="w3-padding-16 w3-hover-pale-green">
+        <span onclick="this.parentElement.style.display='none'" class="w3-closebtn w3-padding w3-margin-right w3-medium"><i class="fa fa-window-close"></i></span>
+        <span class="w3-xlarge">[01.05.2017 00:13] anonymus - welcome to the game, here is the tutorial ;)</span><br>
+      </li>
+      <li class="w3-padding-16 w3-hover-pale-green">
+        <span onclick="this.parentElement.style.display='none'" class="w3-closebtn w3-padding w3-margin-right w3-medium"><i class="fa fa-window-close"></i></span>
+        <span class="w3-xlarge">[01.05.2017 00:13] anonymus - welcome to the game, here is the tutorial ;)</span><br>
+      </li>
+  </ul>
+  </div>
+<!-- end recent emails -->
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-10 w3-grey w3-text-black w3-right-align w3-margin-top">
+    <h4><i class="fa fa-copyright"></i> phil and chris and <i class="fa fa-heart w3-text-red"></i> to <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></h4>
+  </footer>
+
+  <!-- End page content -->
+</div>
+
+<script>
+// Get the Sidenav
+var mySidenav = document.getElementById("mySidenav");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidenav, and add overlay effect
+function w3_open() {
+    if (mySidenav.style.display === 'block') {
+        mySidenav.style.display = 'none';
+        overlayBg.style.display = "none";
+    } else {
+        mySidenav.style.display = 'block';
+        overlayBg.style.display = "block";
+    }
+}
+
+// Close the sidenav with the close button
+function w3_close() {
+    mySidenav.style.display = "none";
+    overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>
